@@ -2,12 +2,16 @@
   <head>
     <title>Message Board</title>
     <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <div id="index-btn-sct">
-      <a href="/views/newMessage">
-        <button id="index-new-chat-btn">New Chat</button>
-      </a>
+      <button
+        id="index-new-chat-btn"
+        onclick="window.location.href='/views/newMessage';"
+      >
+        New Message
+      </button>
     </div>
     <div id="index-messages-sct"><%- include('boxMessage') %></div>
-  </head>
-  <body></body>
+  </body>
 </html>
