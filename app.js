@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("newMessage", (req, res) => {
+app.get("/views/newMessage", (req, res) => {
   res.render("newMessage");
 });
 
