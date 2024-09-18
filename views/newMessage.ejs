@@ -1,7 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Message</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Submit Your Information</h1>
+    <form action="/submit" method="post" id="newMessage-form">
+      <div class="form-group">
+        <label for="newMessage-name">Name:</label>
+        <input type="text" id="newMessage-name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="newMessage-text">Text:</label>
+        <textarea
+          id="newMessage-text"
+          name="text"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="newMessage-submit">Submit</button>
+      </div>
+    </form>
+  </body>
 </html>

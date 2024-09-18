@@ -1,4 +1,4 @@
-export default messages = [
+messages = [
   {
     text: "Hi there!",
     user: "Amando",
@@ -10,3 +10,5 @@ export default messages = [
     added: new Date(),
   },
 ];
+
+module.exports = messages;
